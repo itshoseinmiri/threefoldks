@@ -40,15 +40,15 @@ export default function CTASection() {
           {/* Copy */}
           <div className="relative z-10 flex flex-col items-start gap-6">
             <h2 className="max-w-md text-2xl font-semibold leading-[1.12] tracking-tight text-foreground md:text-[2.2rem]">
-              Building the next generation of software?
+              Have a product to build?
             </h2>
             <p className="max-w-md text-base leading-7 text-muted">
-              Whether you&apos;re launching a startup, scaling financial
-              infrastructure, or modernizing enterprise operations, we&apos;re
-              ready to help bring your vision to life.
+              Whether it&apos;s a zero-to-one build or a product that needs to
+              ship, we take ideas from first commit to live deployment. Tell us
+              what you&apos;re building.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-foreground px-6 text-sm font-semibold text-surface transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_-10px_rgba(10,10,10,0.45)]"
             >
               Let&apos;s build together

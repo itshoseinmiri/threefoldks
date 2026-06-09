@@ -4,11 +4,11 @@ import Container from "./ui/Container";
 import Button from "./ui/Button";
 
 const navLinks = [
-  { label: "Home", href: "#" },
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Team", href: "#team" },
+  { label: "Home", href: "/" },
+  { label: "Work", href: "/work" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Team", href: "/#team" },
 ];
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className="sticky top-4 z-50 px-4">
       <Container className="flex h-16 items-center justify-between rounded-full border border-border bg-surface/80 px-6 backdrop-blur">
         {/* Logo */}
-        <Link href="#" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src="/assets/logo.webp"
             alt="threefold"
@@ -39,7 +39,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <Button href="#contact">Contact us →</Button>
+        <Button href="/contact">Contact us →</Button>
       </Container>
     </header>
   );
