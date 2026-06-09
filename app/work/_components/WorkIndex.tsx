@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Container from "./ui/Container";
+import Container from "../../_components/ui/Container";
 
 function ArrowUpRight({ className = "" }: { className?: string }) {
   return (
@@ -45,8 +45,10 @@ const projects: Project[] = [
     ratio: "1121 / 796",
     href: "http://vpay.fund/",
     meta: [
+      { label: "Year", value: "2024" },
       { label: "Role", value: "Product engineering" },
       { label: "Domain", value: "Digital payments" },
+      { label: "Stack", value: "React Native · Node · PostgreSQL" },
     ],
   },
   {
@@ -59,27 +61,23 @@ const projects: Project[] = [
     ratio: "1478 / 985",
     href: "http://37.1.196.234:3001/",
     meta: [
+      { label: "Year", value: "2023" },
       { label: "Role", value: "Web platform & 3D" },
       { label: "Domain", value: "Manufacturing" },
+      { label: "Stack", value: "Next.js · Three.js · WebGL" },
     ],
   },
 ];
 
-export default function SelectedWork() {
+export default function WorkIndex() {
   return (
-    <section id="work" className="border-t border-border py-20 md:py-28">
+    <section className="border-t border-border py-20 md:py-28">
       <Container>
         {/* Section header — editorial split with running count */}
         <div className="mb-14 flex flex-col gap-6 md:mb-20 md:flex-row md:items-end md:justify-between">
-          <div className="flex max-w-lg flex-col gap-3">
-            <h2 className="text-3xl font-semibold leading-[1.12] tracking-tight text-foreground md:text-4xl">
-              Selected work
-            </h2>
-            <p className="max-w-sm text-sm leading-6 text-muted">
-              Products we&rsquo;ve designed, built, and shipped to production —
-              each one live and solving a real problem.
-            </p>
-          </div>
+          <h2 className="max-w-lg text-3xl font-semibold leading-[1.12] tracking-tight text-foreground md:text-4xl">
+            Case files
+          </h2>
           <div className="flex items-center gap-3 font-mono text-xs tracking-[0.18em] text-faint">
             <span className="tabular-nums text-foreground">
               {String(projects.length).padStart(2, "0")}
@@ -99,6 +97,15 @@ export default function SelectedWork() {
                 id={project.id}
                 className="group relative scroll-mt-28"
               >
+                {/* Oversized index watermark */}
+                <span
+                  className={`pointer-events-none absolute -top-12 select-none font-mono text-[7rem] font-semibold leading-none text-foreground/[0.04] md:text-[9rem] ${
+                    reversed ? "right-0 md:-right-2" : "left-0 md:-left-2"
+                  }`}
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
                 <div
                   className={`relative grid items-center gap-10 md:grid-cols-2 md:gap-16 ${
                     reversed ? "md:[&>*:first-child]:order-2" : ""
@@ -111,7 +118,7 @@ export default function SelectedWork() {
                       target: "_blank",
                       rel: "noreferrer",
                     })}
-                    className="relative block w-full overflow-hidden rounded-3xl transition-transform duration-500 ease-out hover:-translate-y-1.5"
+                    className="relative block w-full overflow-hidden rounded-3xl border border-border shadow-[0_30px_60px_-40px_rgba(10,10,10,0.45)] transition-transform duration-500 ease-out hover:-translate-y-1.5"
                     style={{ aspectRatio: project.ratio }}
                   >
                     <Image

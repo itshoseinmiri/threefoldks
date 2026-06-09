@@ -59,8 +59,8 @@ export default function Journal() {
               <Asterisk />
             </h2>
             <p className="text-base leading-7 text-muted">
-              A multidisciplinary group of engineers, architects, and
-              strategists building software that powers industries.
+              A small, senior team of engineers who design, build, and ship
+              products end to end — from zero to deployment.
             </p>
           </div>
           <div className="flex items-center gap-3 font-mono text-xs tracking-[0.18em] text-faint">
@@ -85,7 +85,7 @@ export default function Journal() {
               </span>
 
               {/* Portrait — grayscale at rest, color on hover */}
-              <div className="relative h-12 w-12 overflow-hidden rounded-xl ring-1 ring-border md:h-16 md:w-16">
+              <div className="relative h-12 w-12 overflow-hidden rounded-full ring-1 ring-border md:h-16 md:w-16">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -114,14 +114,14 @@ export default function Journal() {
 
           {/* Open-position row — keeps the "Join us" CTA inside the ledger */}
           <a
-            href="#contact"
+            href="/contact"
             className="group grid grid-cols-[2.25rem_3.25rem_minmax(0,1fr)] items-center gap-x-4 border-b border-border py-6 md:grid-cols-[4rem_5rem_minmax(0,1fr)_2.5rem] md:gap-x-8 md:py-7"
           >
             <span className="font-mono text-sm tabular-nums text-faint transition-colors duration-300 group-hover:text-accent">
               +
             </span>
 
-            <div className="grid h-12 w-12 place-items-center rounded-xl border border-dashed border-border text-faint transition-colors duration-300 group-hover:border-accent group-hover:text-accent md:h-16 md:w-16">
+            <div className="grid h-12 w-12 place-items-center rounded-full border border-dashed border-border text-faint transition-colors duration-300 group-hover:border-accent group-hover:text-accent md:h-16 md:w-16">
               <span className="text-xl leading-none">+</span>
             </div>
 

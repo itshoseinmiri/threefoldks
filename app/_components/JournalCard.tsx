@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Placeholder from "./ui/Placeholder";
 
 type JournalCardProps = {
@@ -8,7 +7,7 @@ type JournalCardProps = {
 
 export default function JournalCard({ category, title }: JournalCardProps) {
   return (
-    <Link href="#" className="group flex flex-col gap-4">
+    <div className="group flex flex-col gap-4">
       {/* Article cover slot */}
       <Placeholder label="cover image" className="aspect-[16/10] w-full" />
       <div className="flex flex-col gap-2">
@@ -19,6 +18,6 @@ export default function JournalCard({ category, title }: JournalCardProps) {
           {title}
         </h3>
       </div>
-    </Link>
+    </div>
   );
 }
