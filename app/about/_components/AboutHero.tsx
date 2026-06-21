@@ -1,7 +1,7 @@
 import Container from "../../_components/ui/Container";
 
 function TriadRing() {
-  // Three nodes orbiting a central "3" — a literal nod to the threefold name.
+  // Three nodes orbiting a central "3" — a literal nod to the Threefolks name.
   const nodes = [
     { angle: -90, label: "ENG" },
     { angle: 30, label: "ARC" },
@@ -44,7 +44,7 @@ function TriadRing() {
             cy={cy}
             r={r}
             fill="none"
-            stroke="#ececec"
+            stroke="#26262b"
             strokeWidth="1"
             strokeDasharray="2 6"
           />
@@ -54,15 +54,15 @@ function TriadRing() {
             const y = cy + r * Math.sin(rad);
             return (
               <g key={n.label}>
-                <circle cx={x} cy={y} r="7" fill="#ffffff" stroke="#2f5de0" strokeWidth="1.5" />
-                <circle cx={x} cy={y} r="2.5" fill="#2f5de0" />
+                <circle cx={x} cy={y} r="7" fill="#141417" stroke="#6d8cff" strokeWidth="1.5" />
+                <circle cx={x} cy={y} r="2.5" fill="#6d8cff" />
               </g>
             );
           })}
         </g>
 
         {/* Center mark */}
-        <circle cx={cx} cy={cy} r="34" fill="#ffffff" stroke="#ececec" strokeWidth="1" />
+        <circle cx={cx} cy={cy} r="34" fill="#141417" stroke="#26262b" strokeWidth="1" />
         <text
           x={cx}
           y={cy + 14}
@@ -96,7 +96,7 @@ export default function AboutHero() {
         className="pointer-events-none absolute inset-0 opacity-[0.45]"
         style={{
           backgroundImage:
-            "radial-gradient(rgba(10,10,10,0.10) 1px, transparent 1px)",
+            "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px)",
           backgroundSize: "22px 22px",
           maskImage:
             "radial-gradient(120% 90% at 50% 0%, black 30%, transparent 75%)",
@@ -110,7 +110,7 @@ export default function AboutHero() {
             style={{ "--reveal-delay": "0s" } as React.CSSProperties}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px] shadow-emerald-500/50" />
-            About threefold
+            About Threefolks
           </span>
 
           <h1
@@ -129,7 +129,7 @@ export default function AboutHero() {
             className="reveal max-w-md text-base leading-7 text-muted"
             style={{ "--reveal-delay": "0.16s" } as React.CSSProperties}
           >
-            threefold is a small software engineering team where engineering
+            Threefolks is a small software engineering team where engineering
             rigor, systems architecture, and product strategy fold into one
             practice — taking every product from zero to a deployed, running
             system.

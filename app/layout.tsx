@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "threefold — Software engineers shipping products from zero to deployment",
+  title: "Threefolks — Software Engineering Studio",
   description:
     "We're a small team of software engineers who design, build, and deploy production-grade products end to end — from the first commit to a live release. See what we've shipped.",
 };

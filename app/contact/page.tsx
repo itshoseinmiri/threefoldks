@@ -6,9 +6,9 @@ import Container from "../_components/ui/Container";
 import ContactForm from "./_components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — threefold",
+  title: "Contact — Threefolks",
   description:
-    "Get in touch with threefold. Tell us what you're building and we'll reply within one business day.",
+    "Get in touch with Threefolks. Tell us what you're building and we'll reply within one business day.",
 };
 
 function Asterisk() {
@@ -70,7 +70,7 @@ export default function ContactPage() {
             className="pointer-events-none absolute inset-0 opacity-[0.45]"
             style={{
               backgroundImage:
-                "radial-gradient(rgba(10,10,10,0.10) 1px, transparent 1px)",
+                "radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)",
               backgroundSize: "22px 22px",
               maskImage:
                 "radial-gradient(120% 90% at 50% 0%, black 30%, transparent 75%)",

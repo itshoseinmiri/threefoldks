@@ -48,15 +48,15 @@ export default function Footer() {
             <div className="flex flex-col gap-6">
               <Link
                 href="/"
-                aria-label="threefold home"
+                aria-label="Threefolks home"
                 className="flex w-fit items-center"
               >
                 <Image
-                  src="/assets/logo.webp"
-                  alt="threefold"
-                  width={496}
-                  height={452}
-                  className="h-9 w-auto"
+                  src="/assets/threefolks.svg"
+                  alt="Threefolks"
+                  width={901}
+                  height={594}
+                  className="h-9 w-auto invert"
                 />
               </Link>
               <p className="max-w-xs text-sm leading-6 text-muted">
@@ -110,7 +110,7 @@ export default function Footer() {
           {/* Bottom bar */}
           <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-faint sm:flex-row">
             <span>
-              © {new Date().getFullYear()} threefold. All rights reserved.
+              © {new Date().getFullYear()} Threefolks. All rights reserved.
             </span>
           </div>
         </Container>

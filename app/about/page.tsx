@@ -9,9 +9,9 @@ import Principles from "./_components/Principles";
 import Leadership from "./_components/Leadership";
 
 export const metadata: Metadata = {
-  title: "About — threefold",
+  title: "About — Threefolks",
   description:
-    "threefold is a three-person software engineering team that takes products from zero to deployment — owning product, architecture, engineering, and release end to end.",
+    "Threefolks is a three-person software engineering team that takes products from zero to deployment — owning product, architecture, engineering, and release end to end.",
 };
 
 export default function AboutPage() {

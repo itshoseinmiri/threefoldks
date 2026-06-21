@@ -110,11 +110,11 @@ export default function Disciplines() {
       <Container>
         <div className="mb-12 flex flex-col gap-6 md:mb-16 md:flex-row md:items-end md:justify-between">
           <h2 className="max-w-md text-3xl font-semibold leading-[1.12] tracking-tight text-foreground md:text-4xl">
-            Why we&apos;re called threefold
+            Why we&apos;re called Threefolks
             <Asterisk />
           </h2>
           <p className="max-w-xs text-sm leading-6 text-muted">
-            One name, three folds. Each discipline reinforces the others — and
+            One name, three folks. Each discipline reinforces the others — and
             none ships without the rest.
           </p>
         </div>

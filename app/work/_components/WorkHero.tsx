@@ -19,7 +19,7 @@ export default function WorkHero() {
         className="pointer-events-none absolute inset-0 opacity-[0.45]"
         style={{
           backgroundImage:
-            "radial-gradient(rgba(10,10,10,0.10) 1px, transparent 1px)",
+            "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px)",
           backgroundSize: "22px 22px",
           maskImage:
             "radial-gradient(120% 90% at 50% 0%, black 30%, transparent 75%)",

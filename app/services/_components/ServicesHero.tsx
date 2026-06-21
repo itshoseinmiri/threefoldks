@@ -8,10 +8,10 @@ const stats = [
 
 // Engineering layers, top (closest to the idea) to bottom (closest to the metal).
 const layers = [
-  { label: "Strategy", note: "Direction", indent: 0, tone: "#eef1fb" },
-  { label: "Architecture", note: "Structure", indent: 1, tone: "#dbe3fa" },
-  { label: "Engineering", note: "Build", indent: 2, tone: "#b9c8f4" },
-  { label: "Infrastructure", note: "Run", indent: 3, tone: "#7d99ec" },
+  { label: "Strategy", note: "Direction", indent: 0, tone: "#161726" },
+  { label: "Architecture", note: "Structure", indent: 1, tone: "#191b30" },
+  { label: "Engineering", note: "Build", indent: 2, tone: "#1c2042" },
+  { label: "Infrastructure", note: "Run", indent: 3, tone: "#1c2552" },
 ];
 
 export default function ServicesHero() {
@@ -22,7 +22,7 @@ export default function ServicesHero() {
         className="pointer-events-none absolute inset-0 opacity-[0.45]"
         style={{
           backgroundImage:
-            "radial-gradient(rgba(10,10,10,0.10) 1px, transparent 1px)",
+            "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px)",
           backgroundSize: "22px 22px",
           maskImage:
             "radial-gradient(120% 90% at 50% 0%, black 30%, transparent 75%)",
@@ -90,11 +90,11 @@ export default function ServicesHero() {
             {layers.map((layer, i) => (
               <div
                 key={layer.label}
-                className="reveal group flex items-center justify-between rounded-xl border border-[#dfe5f6] px-5 py-4 transition-transform duration-300 ease-out hover:-translate-y-0.5"
+                className="reveal group flex items-center justify-between rounded-xl border border-white/10 px-5 py-4 transition-transform duration-300 ease-out hover:-translate-y-0.5"
                 style={
                   {
                     marginLeft: `${layer.indent * 1.5}rem`,
-                    background: `linear-gradient(135deg, ${layer.tone}, #ffffff)`,
+                    background: `linear-gradient(135deg, ${layer.tone}, #0b0b0c)`,
                     boxShadow:
                       "0 18px 40px -28px rgba(45,93,224,0.45)",
                     "--reveal-delay": `${0.36 + i * 0.08}s`,
@@ -115,7 +115,7 @@ export default function ServicesHero() {
               </div>
             ))}
             {/* Spine connecting the layers */}
-            <span className="pointer-events-none absolute -left-1 top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-[#c4d0f5] to-transparent" />
+            <span className="pointer-events-none absolute -left-1 top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent" />
           </div>
         </div>
       </Container>
