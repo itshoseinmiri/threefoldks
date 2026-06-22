@@ -7,9 +7,9 @@ import ServiceDetail from "./_components/ServiceDetail";
 import Process from "./_components/Process";
 
 export const metadata: Metadata = {
-  title: "Services — threefold",
+  title: "Services — Threefolks",
   description:
-    "threefold engineers software across every layer — from product strategy and architecture to build and deployment — specialized in blockchain, fintech, and the 3D web.",
+    "Threefolks engineers software across every layer — from product strategy and architecture to build and deployment — specialized in blockchain, fintech, and the 3D web.",
 };
 
 export default function ServicesPage() {

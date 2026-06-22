@@ -7,9 +7,9 @@ import WorkIndex from "./_components/WorkIndex";
 import Engagements from "./_components/Engagements";
 
 export const metadata: Metadata = {
-  title: "Work — threefold",
+  title: "Work — Threefolks",
   description:
-    "Selected work from threefold — production products we've shipped from zero to deployment, including vPay and Lamina across fintech and the 3D web.",
+    "Selected work from Threefolks — production products we've shipped from zero to deployment, including vPay and Lamina across fintech and the 3D web.",
 };
 
 export default function WorkPage() {

@@ -31,10 +31,10 @@ export default function CTASection() {
     <section id="contact" className="py-20 md:py-28">
       <Container>
         <div
-          className="cube-scene relative grid items-center gap-10 overflow-hidden rounded-[28px] border border-[#e3e7f6] px-8 py-14 md:grid-cols-2 md:px-14 md:py-16"
+          className="cube-scene relative grid items-center gap-10 overflow-hidden rounded-[28px] border border-white/10 px-8 py-14 md:grid-cols-2 md:px-14 md:py-16"
           style={{
             background:
-              "radial-gradient(120% 130% at 82% 50%, #d6e0fb 0%, #e6ebfb 32%, #f2f4fd 60%, #fbfbfb 100%)",
+              "radial-gradient(120% 130% at 82% 50%, #1c2552 0%, #161a36 34%, #101223 62%, #0b0b0c 100%)",
           }}
         >
           {/* Copy */}

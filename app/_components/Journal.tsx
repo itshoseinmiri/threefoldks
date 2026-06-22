@@ -42,9 +42,10 @@ function ArrowUpRight({ className = "" }: { className?: string }) {
 }
 
 const team = [
-  { name: "Vahid", role: "Software Architect", image: "/assets/vahid.jpg" },
-  { name: "Farshad", role: "Software Engineer", image: "/assets/farshad.jpg" },
+  { name: "Vahid", role: "Software Architect", image: "/assets/vahid-profile.png" },
+  { name: "Farshad", role: "Software Engineer", image: "/assets/farshad-profile.jpg" },
   { name: "Husein", role: "Software Engineer", image: "/assets/husein.jpg" },
+  { name: "Mahdieh Fahimpour", role: "Learning & Development (L&D) Specialist", image: "/assets/mahdieh.png" },
 ];
 
 export default function Journal() {

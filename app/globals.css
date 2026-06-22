@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  /* Palette sampled from the landing-light design (monochrome) */
-  --color-background: #fbfbfb; /* page background (off-white) */
-  --color-surface: #ffffff; /* cards, nav, raised surfaces */
-  --color-subtle: #f4f4f5; /* tinted bands, placeholders */
-  --color-foreground: #0a0a0a; /* primary text, dark buttons */
-  --color-foreground-hover: #27272a; /* dark button hover */
-  --color-muted: #6b6f76; /* secondary text */
-  --color-faint: #a1a1aa; /* labels, eyebrows, tertiary text */
-  --color-border: #ececec; /* hairline borders */
-  --color-accent: #2f5de0; /* brand blue — eyebrows, asterisk accent */
+  /* Dark monochrome palette — grounded in the hero (#0b0b0c) */
+  --color-background: #0b0b0c; /* page background (near-black) */
+  --color-surface: #141417; /* cards, nav, raised surfaces */
+  --color-subtle: #1c1c20; /* tinted bands, placeholders, hover fills */
+  --color-foreground: #f4f4f5; /* primary text, light buttons */
+  --color-foreground-hover: #e4e4e7; /* light button hover */
+  --color-muted: #9a9aa2; /* secondary text */
+  --color-faint: #6a6a72; /* labels, eyebrows, tertiary text */
+  --color-border: #26262b; /* hairline borders */
+  --color-accent: #6d8cff; /* brand blue — brightened for dark contrast */
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -22,47 +22,57 @@ body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
 
-/* --- Initial loading splash: logo line-draw --- */
-@keyframes logo-draw {
+/* --- Initial loading splash: the mark draws itself, then fills --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo-trace {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-@keyframes logo-fill {
+@keyframes logo-trace-fill {
   to {
     fill-opacity: 1;
   }
 }
 
-@keyframes logo-stroke-out {
-  to {
-    stroke-opacity: 0;
-  }
-}
-
-.logo-draw-path {
+.logo-trace {
   fill: var(--color-foreground);
   fill-opacity: 0;
   stroke: var(--color-foreground);
-  stroke-width: 1.4;
+  stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   will-change: stroke-dashoffset, fill-opacity;
-  /* draw the outline, settle the fill in, then retire the drawn stroke */
+  /* trace the outline, then let the fill rise in behind the line */
   animation:
-    logo-draw 1.3s var(--draw-delay, 0s) cubic-bezier(0.65, 0, 0.35, 1) forwards,
-    logo-fill 0.6s calc(var(--draw-delay, 0s) + 1s) ease-out forwards,
-    logo-stroke-out 0.55s calc(var(--draw-delay, 0s) + 1.35s) ease-out forwards;
+    logo-trace 3.1s 0.2s cubic-bezier(0.65, 0, 0.35, 1) forwards,
+    logo-trace-fill 0.7s 2.9s ease-out forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .logo-draw-path {
+  .logo-trace {
     animation: none;
     fill-opacity: 1;
-    stroke-opacity: 0;
     stroke-dashoffset: 0;
   }
 }
@@ -90,13 +100,53 @@ body {
   transform-origin: left center;
   transform: scaleX(0);
   background: var(--color-foreground);
-  animation: loader-fill 3s linear forwards;
+  animation: loader-fill 3.9s linear forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .loader-bar-fill {
     animation: none;
     transform: scaleX(1);
+  }
+}
+
+/* --- Hero: ambient float for the 3D crew + spotlight breathing --- */
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.hero-float {
+  animation: hero-float 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes hero-glow {
+  0%,
+  100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+.hero-glow {
+  animation: hero-glow 9s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float,
+  .hero-glow {
+    animation: none;
   }
 }
 

@@ -18,12 +18,12 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/assets/logo.webp"
-            alt="threefold"
-            width={496}
-            height={452}
+            src="/assets/threefolks.svg"
+            alt="Threefolks"
+            width={901}
+            height={594}
             priority
-            className="h-7 w-auto"
+            className="h-7 w-auto invert"
           />
         </Link>
 

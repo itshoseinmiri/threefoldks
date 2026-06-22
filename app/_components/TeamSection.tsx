@@ -138,7 +138,7 @@ export default function TeamSection() {
       {/* Backdrop */}
       <div
         className="pointer-events-none absolute inset-0"
-        style={{ backgroundColor: "#FBFBFB" }}
+        style={{ backgroundColor: "#0b0b0c" }}
       />
 
       {/* Dot grid texture */}
@@ -146,7 +146,7 @@ export default function TeamSection() {
         className="pointer-events-none absolute inset-0 opacity-[0.5]"
         style={{
           backgroundImage:
-            "radial-gradient(rgba(10,10,10,0.10) 1px, transparent 1px)",
+            "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px)",
           backgroundSize: "22px 22px",
         }}
       />

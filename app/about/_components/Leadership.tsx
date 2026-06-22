@@ -25,14 +25,14 @@ const founders = [
     name: "Vahid",
     role: "Software Architect",
     fold: "The Architecture fold",
-    image: "/assets/vahid.jpg",
+    image: "/assets/vahid-profile.png",
     bio: "Designs the systems beneath the systems — turning fuzzy requirements into structures that scale cleanly for years.",
   },
   {
     name: "Farshad",
     role: "Software Engineer",
     fold: "The Engineering fold",
-    image: "/assets/farshad.jpg",
+    image: "/assets/farshad-profile.jpg",
     bio: "Lives in the details that make software trustworthy: correctness, performance, and the tests that prove both.",
   },
   {

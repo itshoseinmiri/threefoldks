@@ -16,7 +16,7 @@ export default function Manifesto() {
           <div className="relative aspect-square w-full overflow-hidden rounded-3xl border border-border">
             <Image
               src="/assets/architects.png"
-              alt="The threefold studio at work"
+              alt="The Threefolks studio at work"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 45vw, 100vw"
@@ -48,7 +48,7 @@ export default function Manifesto() {
 
           <div className="flex flex-col gap-4 text-base leading-7 text-muted">
             <p>
-              threefold grew out of a small group of engineers who kept being
+              Threefolks grew out of a small group of engineers who kept being
               pulled into the projects nobody else wanted to touch: the payment
               rails that couldn&apos;t go down, the blockchain systems that had to
               be provably correct, the enterprise platforms buckling under their

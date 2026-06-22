@@ -2,6 +2,7 @@ import Navbar from "./_components/Navbar";
 import Hero from "./_components/Hero";
 import LogoStrip from "./_components/LogoStrip";
 import SelectedWork from "./_components/SelectedWork";
+import CaseStudies from "./_components/CaseStudies";
 import TeamSection from "./_components/TeamSection";
 import Services from "./_components/Services";
 import Journal from "./_components/Journal";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <LogoStrip />
         <SelectedWork />
+        <CaseStudies />
         <TeamSection />
         <Services />
         <Journal />
