@@ -61,6 +61,31 @@ const services = [
     description:
       "Digital platforms for architecture, engineering, and construction firms including project management, field operations, BIM integrations, and workflow automation.",
   },
+  {
+    title: "Conversational AI Agents",
+    description:
+      "Multi-account AI agents that take part in live group chats and respond naturally in context. They pick up on the tone, topic, and pace of each community — across Telegram and Discord — and reply with the right style and timing, even with images and reactions, all running on their own and powered by Gemini and GPT.",
+  },
+  {
+    title: "Telegram & Discord Bots",
+    description:
+      "Messaging and engagement automation running across many accounts at once.",
+  },
+  {
+    title: "Browser Extensions & Web Automation",
+    description:
+      "Extensions and scripts that automate sign-ups and pull data from sites — like the Luma auto-register tool.",
+  },
+  {
+    title: "AI Content Generation",
+    description:
+      "Writing posts, replies, and announcements with AI across Twitter, Discord, and Telegram — shaped to the purpose, from marketing and ads to introductions.",
+  },
+  {
+    title: "Backend Platforms & CRM",
+    description:
+      "Microservice platforms for heavy, around-the-clock workloads — plus the CRM and lead tools that keep clients and partnerships in order.",
+  },
 ];
 
 export default function Services() {
