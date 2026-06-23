@@ -10,6 +10,7 @@ const footerNav = [
       { label: "Work", href: "/#work" },
       { label: "Services", href: "/#services" },
       { label: "Team", href: "/#team" },
+      { label: "Privacy", href: "/privacy-policy" },
     ],
   },
   {
